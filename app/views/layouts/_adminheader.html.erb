@@ -28,6 +28,9 @@
                             <img src="/assets/logo-sm.png" alt="Jump start">
                         </span>
                     </div>
+                    <% if admin_signed_in? || doctor_signed_in? || hospitaladmin_signed_in? %>
+  
+
                     <nav id="top-nav" class="navbar-no-collapse" role="navigation">
                         <!-- navbar search form -->
                        
@@ -55,6 +58,7 @@
                            
                         </ul>
                     </nav>
+                    <% end %>
                 </div>
             </div>
         </div>
